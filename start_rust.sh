@@ -86,19 +86,16 @@ FPS="70"
 UPDATEBATCH="128"
 AI_TICKRATE="3"
 TICKRATE="10"
-STARTMODE="0"
      elif [ "$PERFORMANCE" = "2" ]; then
      FPS="256"
      UPDATEBATCH="256"
      AI_TICKRATE="5"
      TICKRATE="10"
-     STARTMODE="0"
           elif [ "$PERFORMANCE" = "3" ]; then
           FPS="-1"
           UPDATEBATCH="512"
           AI_TICKRATE="6"
           TICKRATE="30"
-          STARTMODE="0"
      else
   echo "Error: Please select performance"
   exit
@@ -119,10 +116,8 @@ fi
 ##################
 
 if [ "$AUTO" = "1" ]; then
-STARTMODE="0"
 OXIDE_UPDATE="1"
 else
-STARTMODE="0"
 OXIDE_UPDATE="0"
 fi
 
